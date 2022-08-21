@@ -1,6 +1,4 @@
 let pass1 = document.getElementById("pass1");
-let pass2 = document.getElementById("pass2");
-let para = document.getElementById("para");
 //console.log("js running successfully");
 function check()
 {
@@ -16,4 +14,3 @@ function check()
     }
 }
 pass1.addEventListener('keyup', check);
-pass2.addEventListener('keyup', check);
