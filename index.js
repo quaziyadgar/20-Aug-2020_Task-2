@@ -1,16 +1,17 @@
 let pass1 = document.getElementById("pass1");
+let checkBox = document.getElementById("check");
 //console.log("js running successfully");
 function check()
 {
-    if(pass1.value === pass2.value)
+    if(this.checked)
     {
-        para.innerText = "Password Matched ✅";
-        //console.log("pass match");
+        pass1.setAttribute("type", "text");   
+        //console.log('checked');
     }
     else
     {
-        para.innerText = "Password do not matched ❌"; 
-        //console.log("not matched");
+        pass1.setAttribute("type", "password"); 
+        //console.log('unchecked');
     }
 }
-pass1.addEventListener('keyup', check);
+checkBox.addEventListener('change', check);
